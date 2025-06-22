@@ -273,3 +273,65 @@ header p {
     display: none;
   }
 }
+@media screen and (max-width: 320px) {
+  .pricing-table {
+    padding: 7px;
+  }
+  header {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.3rem;
+  }
+  header p {
+    font-size: 0.7rem;
+  }
+  .plan-header {
+    grid-template-columns: 1fr repeat(2, 1fr);
+  }
+  .plan-header > span:nth-child(2),
+  .plan-header > span:nth-child(3) {
+    display: none;
+  }
+  .plan-header {
+    padding: 0px;
+    text-align: center;
+  }
+  .price-duration {
+    font-size: 0.6rem;
+  }
+  .price-amount {
+    font-size: 1rem !important;
+  }
+  .plan-title {
+    font-size: 0.5rem;
+  }
+  .plan-header > span:nth-child(4) .plan-title {
+    font-size: 0.5rem;
+    padding: 2px 8px;
+  }
+  .feature-row {
+    grid-template-columns: 1fr repeat(2, 1fr);
+  }
+  .feature-row .feature-value:nth-child(2),
+  .feature-row .feature-value:nth-child(3) {
+    display: none;
+  }
+  .feature-name,
+  .feature-value {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.6rem;
+  }
+  .plan-footer {
+    grid-template-columns: 1fr repeat(2, 1fr);
+  }
+  .btn {
+    padding: 20px 10px;
+    font-size: 0.6rem;
+  }
+  .plan-footer > span:nth-child(2),
+  .plan-footer > span:nth-child(3) {
+    display: none;
+  }
+}
