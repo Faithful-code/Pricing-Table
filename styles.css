@@ -147,7 +147,61 @@ header p {
   color: #ffffff !important;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
+  .plan-header {
+    grid-template-columns: 1fr repeat(4, 1fr);
+  }
+  .plan-header > span {
+    padding: 9px;
+    text-align: center;
+  }
+  .feature-row {
+    grid-template-columns: 1fr repeat(4, 1fr);
+  }
+  .feature-name,
+  .feature-value {
+    padding: 15px;
+    text-align: center;
+  }
+  .plan-footer {
+    grid-template-columns: 1fr repeat(4, 1fr);
+  }
+  .btn {
+    padding: 20px 10px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .pricing-table {
+    padding: 30px;
+  }
+  header {
+    padding: 30px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .plan-header {
+    grid-template-columns: 1fr repeat(4, 1fr);
+  }
+  .plan-header > span {
+    padding: 10px;
+    text-align: center;
+  }
+  .price-duration {
+    font-size: 0.9rem;
+  }
+  .price-amount {
+    font-size: 2.5rem !important;
+  }
+  .plan-footer {
+    height: 8vh;
+  }
+}
+@media (max-width: 768px) {
   .plan-header {
     grid-template-columns: 1fr repeat(3, 1fr);
   }
@@ -155,8 +209,14 @@ header p {
     display: none;
   }
   .plan-header > span {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+  }
+  .price-duration {
+    font-size: 0.9rem;
+  }
+  .price-amount {
+    font-size: 1.7rem !important;
   }
   .feature-row {
     grid-template-columns: 1fr repeat(3, 1fr);
@@ -166,8 +226,9 @@ header p {
   }
   .feature-name,
   .feature-value {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
+    overflow: hidden;
   }
   .plan-footer {
     grid-template-columns: 1fr repeat(3, 1fr);
@@ -176,48 +237,12 @@ header p {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 712px) {
   .pricing-table {
-    padding: 30px;
-  }
-  .plan-header {
-    grid-template-columns: 1fr repeat(2, 1fr);
-  }
-  .plan-header > span:nth-child(2),
-  .plan-header > span:nth-child(3) {
-    display: none;
-  }
-  .feature-row {
-    grid-template-columns: 1fr repeat(2, 1fr);
-  }
-  .feature-row .feature-value:nth-child(2),
-  .feature-row .feature-value:nth-child(3) {
-    display: none;
-  }
-  .plan-header {
-    padding: 0px;
-    text-align: center;
-  }
-  .price-duration {
-    font-size: 0.9rem;
-  }
-  .price-amount {
-    font-size: 1.7rem !important;
-  }
-  .plan-footer {
-    grid-template-columns: 1fr repeat(2, 1fr);
-  }
-  .plan-footer > span:nth-child(2),
-  .plan-footer > span:nth-child(3) {
-    display: none;
-  }
-}
-@media screen and (max-width: 640px) {
-  .pricing-table {
-    padding: 25px;
+    padding: 20px;
   }
   header {
-    padding: 30px;
+    padding: 20px;
   }
   header h1 {
     font-size: 1.5rem;
@@ -226,14 +251,46 @@ header p {
     font-size: 0.9rem;
   }
   .plan-header {
-    grid-template-columns: 1fr repeat(2, 1fr);
+    grid-template-columns: 1fr repeat(3, 1fr);
   }
-  .plan-header > span:nth-child(2),
-  .plan-header > span:nth-child(3) {
+  .plan-header > span:nth-child(2) {
     display: none;
   }
+  .plan-header > span {
+    padding: 5px;
+    text-align: center;
+  }
+  .price-duration {
+    font-size: 0.8rem;
+  }
+  .price-amount {
+    font-size: 1.5rem !important;
+  }
+  .btn {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 600px) {
+  .pricing-table {
+    padding: 15px;
+  }
+  header {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.4rem;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
   .plan-header {
-    padding: 0px;
+    grid-template-columns: 1fr repeat(3, 1fr);
+  }
+  .plan-header > span:nth-child(2) {
+    display: none;
+  }
+  .plan-header > span {
+    padding: 5px;
     text-align: center;
   }
   .price-duration {
@@ -243,16 +300,48 @@ header p {
     font-size: 1.5rem !important;
   }
   .plan-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .plan-header > span:nth-child(4) .plan-title {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 2px 8px;
   }
+  .feature-row {
+    grid-template-columns: 1fr repeat(3, 1fr);
+  }
+  .feature-row .feature-value:nth-child(2) {
+    display: none;
+  }
+  .feature-name,
+  .feature-value {
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 0.8rem;
+  }
+  .plan-footer {
+    grid-template-columns: 1fr repeat(3, 1fr);
+    height: 4vh;
+  }
+  .plan-footer > span:nth-child(2) {
+    display: none;
+  }
+  .btn {
+    padding: 10px 10px;
+    font-size: 0.8rem;
+  }
 }
-@media screen and (max-width: 425px) {
-  .pricing-table {
-    padding: 20px;
+@media (max-width: 480px) {
+  .plan-header {
+    grid-template-columns: 1fr repeat(2, 1fr);
+  }
+  .plan-header > span:nth-child(2),
+  .plan-header > span:nth-child(3) {
+    display: none;
+  }
+  .plan-header > span {
+    padding: 5px;
+    text-align: center;
   }
   header {
     padding: 15px;
@@ -263,29 +352,18 @@ header p {
   header p {
     font-size: 0.7rem;
   }
-  .plan-header {
-    grid-template-columns: 1fr repeat(2, 1fr);
-  }
-  .plan-header > span:nth-child(2),
-  .plan-header > span:nth-child(3) {
-    display: none;
-  }
-  .plan-header {
-    padding: 0px;
-    text-align: center;
-  }
-  .price-duration {
-    font-size: 0.7rem;
-  }
-  .price-amount {
-    font-size: 1.2rem !important;
-  }
   .plan-title {
     font-size: 0.7rem;
   }
   .plan-header > span:nth-child(4) .plan-title {
     font-size: 0.7rem;
     padding: 2px 8px;
+  }
+  .price-duration {
+    font-size: 0.8rem;
+  }
+  .price-amount {
+    font-size: 1.5rem !important;
   }
   .feature-row {
     grid-template-columns: 1fr repeat(2, 1fr);
@@ -298,21 +376,23 @@ header p {
   .feature-value {
     padding: 10px;
     text-align: center;
+    overflow: hidden;
     font-size: 0.7rem;
   }
   .plan-footer {
     grid-template-columns: 1fr repeat(2, 1fr);
-  }
-  .btn {
-    padding: 20px 10px;
-    font-size: 0.7rem;
+    height: 5vh;
   }
   .plan-footer > span:nth-child(2),
   .plan-footer > span:nth-child(3) {
     display: none;
   }
+  .btn {
+    padding: 15px 10px;
+    font-size: 0.6rem;
+  }
 }
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
   .pricing-table {
     padding: 7px;
   }
@@ -366,7 +446,7 @@ header p {
     grid-template-columns: 1fr repeat(2, 1fr);
   }
   .btn {
-    padding: 20px 10px;
+    padding: 11px 10px;
     font-size: 0.6rem;
   }
   .plan-footer > span:nth-child(2),
