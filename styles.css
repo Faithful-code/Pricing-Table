@@ -30,6 +30,7 @@ header p {
   margin: 0 auto;
 }
 .pricing-table {
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   background: white;
