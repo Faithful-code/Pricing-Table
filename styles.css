@@ -211,6 +211,45 @@ header p {
     display: none;
   }
 }
+@media screen and (max-width: 600px) {
+  .pricing-table {
+    padding: 25px;
+  }
+  header {
+    padding: 30px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  .plan-header {
+    grid-template-columns: 1fr repeat(2, 1fr);
+  }
+  .plan-header > span:nth-child(2),
+  .plan-header > span:nth-child(3) {
+    display: none;
+  }
+  .plan-header {
+    padding: 0px;
+    text-align: center;
+  }
+  .price-duration {
+    font-size: 0.8rem;
+  }
+  .price-amount {
+    font-size: 1.5rem !important;
+  }
+  .plan-title {
+    font-size: 0.9rem;
+  }
+  .plan-header > span:nth-child(4) .plan-title {
+    font-size: 0.9rem;
+    padding: 2px 8px;
+  }
+  
+}
 @media screen and (max-width: 425px) {
   .pricing-table {
     padding: 20px;
